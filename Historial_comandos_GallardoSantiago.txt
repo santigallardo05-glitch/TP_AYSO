@@ -1,0 +1,90 @@
+ssh-keygen
+cd
+cd .ssh/
+ls -la
+cat id_rsa.pub
+cd mkdir repogit
+git clone git@github.com:santigallardo05-glitch/TP_AYSO.git
+cd TP_AYSO/
+pwd
+ls -l
+cat /etc/passwd
+cd
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+ls
+mv datos_usuario.txt /repogit/TP_AySO/
+mv datos_usuario.txt ./repogit/TP_AYSO/
+ls
+cd repogit
+ls
+cd UTN-FRA_SO_onBording/
+ls
+cd
+ls -la
+ls
+cd repogit
+ls
+rm -r UTN-FRA_SO_onBording/
+cd repogit
+git clone git@github.com:santigallardo05-glitch/TP_AYSO.git
+cd TP_AYSO/
+mv datos_usuario.txt ./repogit/TP
+ls
+cd
+cd repogit
+ls
+cd TP
+cd TP_AYSO/
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+ls
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git config --global user.email "santigallardo05@gmail.com"
+git config --global user.name "santigallardo05-glitch"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+cat info_pc.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+man grep
+man sort
+grep -v "nologin" /etc/passwd | head -n 10 | sort -k7
+grep -v "nologin" /etc/passwd | head -n 10 | sort -k7 > lista_ordenada
+cat lista_ordenada
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+cat << EOF >> README.md
+alumno: Santiago Gallardo
+division: 116
+turno: Mañana
+EOF
+
+git add .
+git commit -m "feat: datos alumnos"
+mkdir -p ~/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+sudo snap install tree
+tree ~/TP1/
+cat << EOF > script_dir.sh
+mkdir -p ~/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+EOF
+
+ls -la
+chmod +x script_dir.sh
+ls -l
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
+cp ~/.bash_history ./Historial_comandos_GallardoSantiago.txt
+cat Historial_comandos_GallardoSantiago.txt
+history -a
